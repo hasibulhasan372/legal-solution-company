@@ -1,0 +1,255 @@
+/*-------------------------
+ Common CSS Part 
+ ------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --paragraph-color: #707070;
+    --btn-bg: #B68C5A;
+    --section-head-color: #414040;
+}
+
+/* Header style Part Start  */
+.nav-link,
+.paragraph-color {
+    color: var(--paragraph-color);
+}
+
+.src-btn-bg {
+    background-color: var(--btn-bg);
+}
+
+.primary-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-font {
+    font-family: 'EB Garamond', serif;
+}
+
+.modal-btn {
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.modal-btn:hover {
+    transform: scale(110%);
+    background-color: #6c4d27;
+    color: aliceblue;
+
+}
+
+/* Header Part End   */
+
+/*-------------------------------
+ Main Style Part 
+ --------------------------------*/
+/* Banner Part Start  */
+.banner-part {
+    background-image: url(./images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-overly {
+    background-color: rgba(0, 0, 0, 0.343);
+}
+
+.head-line {
+    font-size: 72px;
+}
+
+.sec-head-color {
+    color: var(--section-head-color);
+}
+
+/* Banner Part End  */
+/* Legal Style Part Start  */
+.special-card {
+    padding-bottom: 11px;
+}
+
+/* Legal Style Part End   */
+
+/* Our Client Feedback Style Part Start  */
+.carousel-item {
+    background-image: url(./images/slider-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secnd-slide {
+    background-image: url(./images/slider-2.jpg);
+}
+
+.third-slide {
+    background-image: url(./images/slider-3.jpg);
+}
+
+.overlay-carousel {
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 250px 0 250px;
+}
+
+.carousel-caption {
+    bottom: 24%;
+}
+
+.carousel-indicators {
+    bottom: 17%;
+}
+
+
+/* Our Client Feedback Style Part End  */
+
+/* FAQ Style Part Start  */
+.accordion-item,
+.accordion-button,
+.submit-bg {
+    background-color: #f3f3f3;
+
+}
+
+.accordion-item:hover,
+.accordion-button:hover {
+    background-color: #f3f3f3;
+    border: none;
+    color: #707070;
+}
+
+/* FAQ Style Part End  */
+
+/* Contact Form Part Style Start  */
+.form-bg {
+    background-color: #f3f3f3;
+}
+
+.contact-form-one {
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070;
+}
+
+.contact-form-two {
+    border-bottom: 1px solid #707070;
+}
+
+.contact-form-three {
+    border-right: 1px solid #707070;
+}
+
+/* Contact Form Part Style End  */
+
+
+/* FAQ Part Start  */
+#footer-btn {
+    margin-left: -10px;
+    z-index: 5;
+}
+
+/* FAQ Part End  */
+
+
+/*---------------------------------
+ Media Query Part Start  
+ ----------------------------------*/
+
+
+/* For Extra Small Device  */
+@media screen and (max-width:575px) {
+
+    .navbar-brand {
+        margin-right: 0;
+        text-align: end;
+    }
+
+    .navbar-brand img {
+        width: 75%;
+    }
+
+    .head-line {
+        font-size: 50px;
+    }
+
+    .card {
+        border: none;
+
+    }
+
+    .contact-form-one,
+    .contact-form-two,
+    .contact-form-three,
+    .contact-form-four {
+        border: 1px solid #707070;
+        margin-bottom: 10px;
+
+
+    }
+
+    .carousel-caption {
+        bottom: 5%;
+    }
+
+    .carousel-indicators {
+        bottom: 1%;
+    }
+
+}
+/* For Small Device  */
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+
+    .navbar-brand {
+        margin-right: 0;
+        text-align: end;
+    }
+
+    .navbar-brand img {
+        width: 75%;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .head-line {
+        font-size: 58px;
+    }
+
+    .carousel-caption {
+        bottom: 13%;
+    }
+
+    .carousel-indicators {
+        bottom: 6%;
+    }
+
+}
+ /* For Medium Device  */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .card {
+        border: none;
+    }
+
+    .head-line {
+        font-size: 63px;
+    }
+
+
+}
+/* For Large Device  */
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    .head-line {
+        font-size: 63px;
+    }
+
+}
